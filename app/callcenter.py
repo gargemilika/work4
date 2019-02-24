@@ -9,7 +9,7 @@ def worker_bonus(week_scores):
     >>> worker_bonus ([[4, 3, 4]])
     1
 
-    >>> worker_bonus ([[4, 4] [5], [5]])
+    >>> worker_bonus ([[4, 4], [5], [5]])
     3
     """
 
