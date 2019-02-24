@@ -25,6 +25,6 @@ def user_letters(name):
     result = ''
     for part in parts:
         result += part[0]
-    return result
+    return result.upper()
 
 
