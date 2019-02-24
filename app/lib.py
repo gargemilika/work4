@@ -10,14 +10,21 @@
 #     return '@' in email
 
 def user_letters(name):
-    """
-    >>> user_letters('Vasilii Ivanovich')
-    VI
-    >>>user_letters(Ivan)
-    V
 
     """
+    >>> user_letters('Василий Иванович')
+    'ВИ'
+    >>> user_letters('Иван')
+    'И'
+    >>> user_letters('Василий Алибабаевич Петров')
+    'ВА'
+    """
 
 
-    parts = name.split
-    return parts[0][0] + parts [1][0]
+    parts = name.split(' ', 1)
+    result = ''
+    for part in parts:
+        result += part[0]
+    return result
+
+
